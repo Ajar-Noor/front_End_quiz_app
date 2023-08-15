@@ -220,15 +220,16 @@ const QuizCard = () => {
                         </div>
                     ))}
 
-                    {state.quizQuestionIndex < state.questions.length - 1 &&
-                        <button onClick={handleOnNextQuestion} disabled={selectedOption[state.quizQuestionIndex] === null} className='cursor-pointer'>
-                            Next
-                        </button>
-                    }
 
                     {state.quizQuestionIndex < state.questions.length - 1 &&
                         <button onClick={handleOnSkipQuestion} className='cursor-pointer ml-10'>
                             Skip
+                        </button>
+                    }
+
+                    {state.quizQuestionIndex < state.questions.length - 1 &&
+                        <button onClick={handleOnNextQuestion} disabled={selectedOption[state.quizQuestionIndex] === null} className='cursor-pointer'>
+                            Next
                         </button>
                     }
 
