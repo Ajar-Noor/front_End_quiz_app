@@ -135,12 +135,12 @@ const QuizCard = () => {
 
     return (
         <div className='mx-auto grid'>
-            <div>
-                <span>Quiz App</span>
+            <div className='top-[70px] left-[90px] relative'>
+                <h1 className='left-[40px] relative'>Quiz App</h1>
                 <div>
                     <p>Time Remaining: {formatTime(timeRemaining)}</p>
                 </div>
-                <span>{state.quizQuestionIndex + 1}/{state.questions.length}</span>
+                <span className='left-[60px] relative'>{state.quizQuestionIndex + 1}/{state.questions.length}</span>
             </div>
 
             {state.quizSubmitted ? (
