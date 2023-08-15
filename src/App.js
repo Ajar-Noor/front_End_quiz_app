@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import QuizCard from './component/Quiz/QuizCard'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <div className='h-[500px] w-[1000px] bg-slate-400 shadow-xl  grid mx-auto my-[60px]'>
+
+        <QuizCard />
+
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
